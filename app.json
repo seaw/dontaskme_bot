@@ -1,0 +1,18 @@
+{
+  "apps":[
+    {
+      "name"             : "slack-tars",
+      "args"             : ["-a", "slack"],
+      "script"           : "/Users/Alio/dontaskme_bot/bin/hubot",
+      "exec_mode"        : "fork",
+      "exec_interpreter" : "bash",
+      "autorestart"      : true,
+      "env": {
+        "NODE_ENV"           : "production",
+        "PORT"               : "8080",
+        "HUBOT_SLACK_TOKEN"  : "xoxb-25138260465-2RO7yilUmQfVhbaK0yMHuGUw",
+        "REDIS_URL"          :"redis://localhost:6379"
+      }
+    }
+  ]
+}
